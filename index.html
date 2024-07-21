@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA Compatible" content="IE-edge" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Contact Form || Alem</title>
+</head>
+
+<body>
+
+    <form>
+        <h1>Contact Us</h1>
+        <div class="personal">
+            <div class="firstname-input">
+                <label for="firstName">
+                    First name
+                </label>
+                <input value="" id="firstName" type="text" required />
+            </div>
+            <div class="lastname-input">
+                <label for="lastName">
+                    Last name
+                </label>
+                <input value="" id="lastName" type="text" required />
+            </div>
+        </div>
+        <div class="email-input">
+            <label for="email">
+                Email address
+            </label>
+            <input value="" id="email" type="email" required />
+        </div>
+        <div class="querytype">
+            <p>Query Type</p>
+            <div class="radio-container">
+                <label class="radio-input" data-target="general-enquiry">
+                    <div class="radio-icon" data-target="general-enquiry"></div>
+                    <input type="radio" id="general-enquiry" name="type" required />General Enquiry
+                </label>
+                <label class="radio-input" data-target="support-request">
+                    <div class="radio-icon" data-target="support-request"></div>
+                    <input type="radio" id="support-request" name="type" />Support Request
+                </label>
+            </div>
+        </div>
+        <div class="message-input">
+            <label for="message">
+                Message
+            </label>
+            <textarea value="" id="message" required></textarea>
+        </div>
+        <div class="acceptation ">
+            <label style="display: flex; place-items: center;" for="consent">
+                <input type="checkbox" id="consent" required />
+                <div class="checkbox-icon"></div>
+                <p>I consent to being contacted by the team</p>
+            </label>
+        </div>
+        <button type="submit" id="submit-btn">Submit</button>
+    </form>
+    <div id="nofitication">
+        <span style="display:flex;gap:1rem;place-items: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" fill="none" viewBox="0 0 20 21">
+                <path fill="#fff"
+                    d="M14.28 7.72a.748.748 0 0 1 0 1.06l-5.25 5.25a.748.748 0 0 1-1.06 0l-2.25-2.25a.75.75 0 1 1 1.06-1.06l1.72 1.72 4.72-4.72a.75.75 0 0 1 1.06 0Zm5.47 2.78A9.75 9.75 0 1 1 10 .75a9.76 9.76 0 0 1 9.75 9.75Zm-1.5 0A8.25 8.25 0 1 0 10 18.75a8.26 8.26 0 0 0 8.25-8.25Z" />
+            </svg>
+            <p>Message Sent!</p>
+        </span>
+        <p>Thanks for completing the form. We'll be in touch soon.</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
